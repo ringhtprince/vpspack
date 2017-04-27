@@ -651,7 +651,6 @@ echo -e "\033[1;37mEscoga una Opcion:    Para Salir Ctrl + C\033[1;33m
 [\033[1;30m23\033[1;33m] Sistema_Detalhes \033[1;30m(Detalles sobre el Sistema)\033[1;33m
 [\033[1;30m24\033[1;33m] Deletar_Todos \033[1;30m(Todos los usuaurios seran eliminados)\033[1;33m
 [\033[1;30m25\033[1;33m] Desinstalar \033[1;30m(Remover VpsPack)\033[0m"
-[\033[1;30m26\033[1;33m] TCPtweaker \033[1;30m(Mejora la latencia y velocidad de la VPS)\033[1;33m
 read -p ": " opcao
 else
 opcao=$1
@@ -714,6 +713,4 @@ case $opcao in
    rm -rf /bin/limite 2>/dev/null
    rm -rf /bin/criarusuario 2>/dev/null
    rm -rf /bin/vpspack 2>/dev/null;;
-   26)
-    TCPtweaker;;
 esac
