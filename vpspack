@@ -64,7 +64,7 @@ squid3 -k reconfigure > /dev/null 2> /dev/null
 echo "$host Agregado" ' > /bin/addhost
 chmod a+x /bin/addhost
 }
-function removerhost(){ echo '#!/bin/bash
+function removerhostf(){ echo '#!/bin/bash
 echo -e "\033[1;31mHosts atualmente permitidos\n\n\033[1;32m$(cat /etc/payloads)\n\033[0m"
 echo -ne "\033[1;37mCual Host desea Eliminar ?: \033[0m"
 read host
@@ -689,7 +689,7 @@ case $opcao in
   15)
    addhost;;
   16)
-   removerhost;;
+   removerhostf;;
   17)
    monitorar;;
   18)
